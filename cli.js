@@ -18,7 +18,7 @@ else {
     }
 
     ws.on('open', () => {
-        ws.send(app.args.join(' '), error);
+        ws.send(app.args[0], error);
     });
     ws.on('error', error);
 }
